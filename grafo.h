@@ -45,16 +45,11 @@ Aresta *criarAresta(Vertice *dest, int peso){
 // Conecta um vértice ao outro, na direção de v1 para v2
 void conectarVertices(Vertice *v1, Vertice *v2, int peso){
     
-    Aresta *aresta = v1->aresta;
-    if (aresta == NULL){
-        aresta->prox = criarAresta(v2, peso);
-        return;
+    Aresta **aresta = &v1->aresta;
+    while (*aresta != NULL){
+        aresta = &(*aresta)->prox;
     }
-    
-    while (aresta->prox != NULL){
-        aresta = aresta->prox;
-    }
-    aresta->prox = criarAresta(v2, peso);
+    *aresta = criarAresta(v2, peso);
 
 }
 
