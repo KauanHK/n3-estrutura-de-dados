@@ -1,9 +1,3 @@
-// Aluno: Kauan Henrique Kaestner
-
-// O código do grafo está em 'grafo.h'
-// Nos arquivos '.c' estão a criação dos grafos
-
-
 #include <stdio.h>
 #include "grafo.h"
 

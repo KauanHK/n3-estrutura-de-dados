@@ -3,9 +3,6 @@
 
 
 
-// A principal diferença para o código em Python é que não é possível criar um vetor com múltiplos tipos em C.
-// É necessário criar dois structs para armazenar o vértice, sua conexão e o peso.
-
 // Declaração do struct vértice para definir 'dest' no struct aresta
 struct vertice;
 
